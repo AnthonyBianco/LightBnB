@@ -1,4 +1,7 @@
 const { Client } = require('pg');
+
+client.query(queryString, values);
+
 const client = new Client({
   user: 'vagrant',
   password: '123',
@@ -22,6 +25,8 @@ client.connect(() => {
          })  })
   .catch(err => console.error('query error', err.stack));
 });
+
+
 
 // Create a new file named teachers.js.
 // Copy the database connection code from students.js.
